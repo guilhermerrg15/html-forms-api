@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">Lista de Tarefas</h2>
+    <a class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-lg mb-4 inline-block" href="/tarefas/form">Criar Tarefa</a>
+    <ul class="bg-white shadow-md p-4">
+        {% for task in tasks %}
+            <li class="mb-4 p-4 bg-gray-200 rounded-lg">
+                <strong class="text-lg">{{ task.title }}</strong>
+                <p class="text-gray-600">{{ task.description }}</p>
+                <p><strong>Status:</strong> {{ task.status }}</p>
+                <p><strong>Data da Realização:</strong> {{ task.data }}</p>
+                <div class="mt-2">
+                    <a class="text-blue-500 hover:underline mr-4" href="/tarefas/{{ task._id }}/editar">Editar</a>
+                    <a class="text-red-500 hover:underline" href="/tarefas/{{ task._id }}/excluir">Excluir</a>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
+
+
+
+
+
+
+
+

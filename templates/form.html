@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2 class="text-2xl mb-4">Criar Tarefa</h2>
+    <form action="/tarefas" method="POST" class="bg-white shadow-md p-4 rounded-lg">
+        <div class="mb-4">
+            <label for="title" class="block">Título:</label>
+            <input type="text" name="title" class="w-full border p-2 rounded-lg" required>
+        </div>
+        <div class="mb-4">
+            <label for="description" class="block">Descrição:</label>
+            <textarea name="description" class="w-full border p-2 rounded-lg" rows="4" required></textarea>
+        </div>
+        <div class="mb-4">
+            <label for="status" class="block">Status:</label>
+            <select name="status" class="w-full border p-2 rounded-lg">
+                <option value="Sim">Sim</option>
+                <option value="Não">Não</option>
+            </select>
+        </div>
+        <div class="mb-4">
+            <label for="data" class="block">Data da Realização:</label>
+            <input type="date" name="data" class="w-full border p-2 rounded-lg">
+        </div>
+        <div>
+            <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-700">Criar Tarefa</button>
+        </div>
+    </form>
+{% endblock %}
+
+
+
+
+
+
+
