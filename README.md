@@ -1,51 +1,51 @@
-# Flask Task Management App
+# Aplicativo de Gerenciamento de Tarefas com Flask
 
-This is a simple task management application built using Flask, a Python web framework.
+Este é um simples aplicativo de gerenciamento de tarefas construído usando Flask, um framework web em Python.
 
-## Overview
+## Visão Geral
 
-The application allows users to perform the following actions:
+O aplicativo permite aos usuários realizar as seguintes ações:
 
-- View a list of tasks.
-- Create a new task.
-- Edit an existing task.
-- Delete a task.
+- Visualizar uma lista de tarefas.
+- Criar uma nova tarefa.
+- Editar uma tarefa existente.
+- Excluir uma tarefa.
 
-## Getting Started
+## Começando
 
-### Prerequisites
+### Pré-requisitos
 
 - Python 3.x
 - Flask
 
-### Installation
+### Instalação
 
-1. Clone the repository:
+1. Clone o repositório:
 
     ```bash
     git clone https://github.com/guilhermerrg15/html-forms-api.git
     ```
 
-2. Navigate to the project directory:
+2. Navegue até o diretório do projeto:
 
     ```bash
     cd html-forms-api
     ```
 
-## Usage
+## Uso
 
-1. Run the Flask application:
+1. Execute o aplicativo Flask:
 
     ```bash
     python app.py
     ```
 
-2. Open your browser and navigate to [http://localhost:80](http://localhost:80) to access the application.
+2. Abra seu navegador e navegue até [http://localhost:80](http://localhost:80) para acessar o aplicativo.
 
-## Structure
+## Estrutura
 
-- `app.py`: Main application file containing the Flask app and routes.
-- `templates/`: HTML templates for rendering pages.
-- `db.json`: JSON file acting as a simple database to store tasks.
+- `app.py`: Arquivo principal do aplicativo contendo a aplicação Flask e as rotas.
+- `templates/`: Modelos HTML para renderização das páginas.
+- `db.json`: Arquivo JSON que atua como um banco de dados simples para armazenar as tarefas.
 
 
